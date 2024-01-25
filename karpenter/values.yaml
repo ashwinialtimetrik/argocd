@@ -20,7 +20,7 @@ serviceAccount:
   name: ""
   # -- Additional annotations for the ServiceAccount.
   annotations:
-    eks.amazonaws.com/role-arn: "arn:aws:iam::658654768793:role/karpenter-role"
+    eks.amazonaws.com/role-arn: "arn:aws:iam::425886803835:role/eksctl-Argo-EKS-cluster-ServiceRole-SZV70aWrcxgE"
 # -- Specifies additional rules for the core ClusterRole.
 additionalClusterRoleRules: []
 serviceMonitor:
@@ -176,15 +176,15 @@ settings:
   # will be batched separately.
   batchIdleDuration: 1s
   # -- Role to assume for calling AWS services.
-  assumeRoleARN: "arn:aws:iam::658654768793:instance-profile/eks-8ac68e3a-8dc4-7aed-8830-c4870641eff0"
+  assumeRoleARN: "arn:aws:iam::425886803835:instance-profile/eks-cec69a49-95db-5b09-16d6-c1f52ae753ee"
   # -- Duration of assumed credentials in minutes. Default value is 15 minutes. Not used unless assumeRoleARN set.
   assumeRoleDuration: 15m
   # -- Cluster CA bundle for TLS configuration of provisioned nodes. If not set, this is taken from the controller's TLS configuration for the API server.
   clusterCABundle: ""
   # -- Cluster name.
-  clusterName: "accelerator_eks"
+  clusterName: "Argo-EKS"
   # -- Cluster endpoint. If not set, will be discovered during startup (EKS only)
-  clusterEndpoint: "https://6F52B9963E7249DB03675E772FF91F75.gr7.us-east-1.eks.amazonaws.com"
+  clusterEndpoint: "https://9282AD437CA3CDC1A79AD02C63E98042.gr7.us-east-1.eks.amazonaws.com"
   # -- If true then assume we can't reach AWS services which don't have a VPC endpoint
   # This also has the effect of disabling look-ups to the AWS pricing endpoint
   isolatedVPC: false
@@ -192,7 +192,7 @@ settings:
   vmMemoryOverheadPercent: 0.075
   # -- interruptionQueue is disabled if not specified. Enabling interruption handling may
   # require additional permissions on the controller service account. Additional permissions are outlined in the docs.
-  interruptionQueue: "accelerator_eks"
+  interruptionQueue: "Argo-EKS"
   # -- Reserved ENIs are not included in the calculations for max-pods or kube-reserved
   # This is most often used in the VPC CNI custom networking setup https://docs.aws.amazon.com/eks/latest/userguide/cni-custom-network.html
   reservedENIs: "0"
