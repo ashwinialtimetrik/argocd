@@ -19,7 +19,7 @@ serviceAccount:
   # If not set and create is true, a name is generated using the fullname template.
   name: ""
   # -- Additional annotations for the ServiceAccount.
-  annotations: {}
+  annotations: {"arn:aws:iam::658654768793:role/karpenter-role"}
 # -- Specifies additional rules for the core ClusterRole.
 additionalClusterRoleRules: []
 serviceMonitor:
@@ -175,15 +175,15 @@ settings:
   # will be batched separately.
   batchIdleDuration: 1s
   # -- Role to assume for calling AWS services.
-  assumeRoleARN: ""
+  assumeRoleARN: "arn:aws:iam::658654768793:instance-profile/eks-8ac68e3a-8dc4-7aed-8830-c4870641eff0"
   # -- Duration of assumed credentials in minutes. Default value is 15 minutes. Not used unless assumeRoleARN set.
   assumeRoleDuration: 15m
   # -- Cluster CA bundle for TLS configuration of provisioned nodes. If not set, this is taken from the controller's TLS configuration for the API server.
   clusterCABundle: ""
   # -- Cluster name.
-  clusterName: ""
+  clusterName: "accelerator_eks"
   # -- Cluster endpoint. If not set, will be discovered during startup (EKS only)
-  clusterEndpoint: ""
+  clusterEndpoint: "https://6F52B9963E7249DB03675E772FF91F75.gr7.us-east-1.eks.amazonaws.com"
   # -- If true then assume we can't reach AWS services which don't have a VPC endpoint
   # This also has the effect of disabling look-ups to the AWS pricing endpoint
   isolatedVPC: false
