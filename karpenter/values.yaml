@@ -184,7 +184,7 @@ settings:
   # -- Cluster name.
   clusterName: "accelerator_eks"
   # -- Cluster endpoint. If not set, will be discovered during startup (EKS only)
-  clusterEndpoint: "https://6F52B9963E7249DB03675E772FF91F75.gr7.us-east-1.eks.amazonaws.com"
+  clusterEndpoint: "https://C6360AFCDD8A84CF312C2BD4CB1EECF4.gr7.us-east-1.eks.amazonaws.com"
   # -- If true then assume we can't reach AWS services which don't have a VPC endpoint
   # This also has the effect of disabling look-ups to the AWS pricing endpoint
   isolatedVPC: false
