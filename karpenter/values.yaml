@@ -176,7 +176,7 @@ settings:
   # will be batched separately.
   batchIdleDuration: 1s
   # -- Role to assume for calling AWS services.
-  assumeRoleARN: "arn:aws:iam::658654768793:instance-profile/eks-8ac68e3a-8dc4-7aed-8830-c4870641eff0"
+  assumeRoleARN: "arn:aws:iam::425886803835:instance-profile/eks-f0c6a9ca-a746-f3bc-deb5-f536a73a98e2"
   # -- Duration of assumed credentials in minutes. Default value is 15 minutes. Not used unless assumeRoleARN set.
   assumeRoleDuration: 15m
   # -- Cluster CA bundle for TLS configuration of provisioned nodes. If not set, this is taken from the controller's TLS configuration for the API server.
