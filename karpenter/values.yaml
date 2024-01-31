@@ -20,7 +20,7 @@ serviceAccount:
   name: ""
   # -- Additional annotations for the ServiceAccount.
   annotations:
-    eks.amazonaws.com/role-arn: "arn:aws:iam::658654768793:role/karpenter-role"
+    eks.amazonaws.com/role-arn: "arn:aws:iam::425886803835:role/karpenter-role"
 # -- Specifies additional rules for the core ClusterRole.
 additionalClusterRoleRules: []
 serviceMonitor:
@@ -184,7 +184,7 @@ settings:
   # -- Cluster name.
   clusterName: "accelerator_eks"
   # -- Cluster endpoint. If not set, will be discovered during startup (EKS only)
-  clusterEndpoint: "https://C6360AFCDD8A84CF312C2BD4CB1EECF4.gr7.us-east-1.eks.amazonaws.com"
+  clusterEndpoint: "https://6CD55CEFD7FC04EDFF5CF8CC6660697F.gr7.us-east-1.eks.amazonaws.com"
   # -- If true then assume we can't reach AWS services which don't have a VPC endpoint
   # This also has the effect of disabling look-ups to the AWS pricing endpoint
   isolatedVPC: false
